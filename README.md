@@ -37,8 +37,7 @@ $ python install.py
 Just clone *git* plugin repo as a *git submodule*. Example:
 
 ```
-$ cd .vim/
-$ git submodule add https://github.com/easymotion/vim-easymotion.git pack/plugins/start/vim-easymotion/
+$ git submodule add https://github.com/easymotion/vim-easymotion.git .vim/pack/plugins/start/vim-easymotion/
 ```
 
 # Vim cheatsheet
