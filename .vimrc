@@ -131,18 +131,6 @@ imap <C-a> <esc>0i
 imap <C-b> <esc>hi
 imap <C-f> <esc>lli
 
-" Change cursor shape in different modes: OSX iTerm2:
-" http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
-" https://gist.github.com/andyfowler/1195581
-if exists('$TMUX')
-  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
-
 " Next line is required to use Go commands (`vim-go`)
 filetype plugin on
 
@@ -215,5 +203,9 @@ if has('gui_running')
     set guioptions-=T
     set guioptions-=m
 else 
+    let &t_SI.="\e[5 q"
+    let &t_SR.="\e[6 q"
+    let &t_EI.="\e[1 q"
+
     colorscheme gruvbox 
 endif
