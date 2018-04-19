@@ -123,6 +123,9 @@ nnoremap <space> za
 " Find merge conflict markers
 map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR><Paste>
 
+" Detecting indentation by filetype
+filetype plugin indent on
+
 " Emacs keybiding for insert mode
 imap <C-e> <esc>$a
 imap <C-a> <esc>0i
