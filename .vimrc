@@ -22,10 +22,8 @@ set laststatus=2
 " `delete` key shoud delete a char
 set backspace=2
 
-" Accesing to system clipboard on Mac
-if $TMUX == ''
-    set clipboard=unnamed
-endif
+" Accesing to system clipboard
+set clipboard=unnamed
 
 " Highlight current line
 set cursorline
@@ -224,6 +222,11 @@ imap <silent> <C-\> <C-O>:call NERDComment('n', 'Toggle')<CR>
 
 " Stop automatic wrapping
 set textwidth=120
+
+" Emulating system clipboard
+inoremap <C-v> <ESC>"+pa
+vnoremap <C-c> "+y
+vnoremap <C-d> "+d
 
 if has('gui_running')
     colorscheme gruvbox
