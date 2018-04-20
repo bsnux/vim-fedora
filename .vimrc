@@ -138,11 +138,7 @@ filetype plugin on
 " Using 4 spaces for displaying a tab in Go. Remember Go use tabs not spaces
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
 
-" Templates w/ Django syntax
-"augroup filetypedetect
-    "au BufRead,BufNewFile dev-server setfiletype python
-    "au BufRead,BufNewFile app-server setfiletype python
-"augroup END
+au BufRead,BufNewFile Jenkinsfile setfiletype groovy
 
 " Google yapf Python formattert
 function! YAPF() range
