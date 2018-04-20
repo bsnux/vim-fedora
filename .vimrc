@@ -227,6 +227,9 @@ inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
 
+" Fugitive
+nmap <leader>gs :Gstatus<cr>
+
 if has('gui_running')
     colorscheme gruvbox
     set guioptions-=T
