@@ -52,3 +52,6 @@
 [submodule ".vim/pack/plugins/start/vim-go"]
 	path = .vim/pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/pack/plugins/start/vim-groovy"]
+	path = .vim/pack/plugins/start/vim-groovy
+	url = git@github.com:johnlim/vim-groovy.git
