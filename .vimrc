@@ -114,10 +114,6 @@ au BufNewFile,BufRead *.c
 " YAML indentation
 au BufNewFile,BufRead *.yaml set tabstop=4 set softtabstop=4
 
-" Flagging Unnecessary Whitespace
-highlight BadWhitespace ctermbg=red guibg=darkred
-au BufNewFile,BufRead *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
 " Enable folding and using `space` key for it
 set foldmethod=indent
 set foldlevel=99
