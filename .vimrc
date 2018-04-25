@@ -111,6 +111,9 @@ au BufNewFile,BufRead *.c
     \ set softtabstop=4 |
     \ set shiftwidth=4
 
+" YAML indentation
+au BufNewFile,BufRead *.yaml set tabstop=4 set softtabstop=4
+
 " Flagging Unnecessary Whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufNewFile,BufRead *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
@@ -229,6 +232,9 @@ vnoremap <C-d> "+d
 
 " Fugitive
 nmap <leader>gs :Gstatus<cr>
+
+" Reindenting whole file
+map <F7> mzgg=G`z
 
 if has('gui_running')
     colorscheme gruvbox

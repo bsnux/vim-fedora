@@ -114,7 +114,7 @@ Usefull commands:
 
 * `>`: Indent
 * `<`: Outdent
-* `ggVG=`: Re-indent file
+* `ggG=`: Re-indent file
 * `=`: Indent selection
 
 ## Fugitive: Git
@@ -174,3 +174,5 @@ $ vim scp://username@host//path/to/file
 * `,y`: Google YAPF code formater
 * `X`: Encrypt file
 * `:%!python -m json.tool`: Format current JSON file
+* `:set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<`: Displaying invisible chars
+* `:set list!`: Hide invisible chars
