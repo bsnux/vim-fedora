@@ -112,7 +112,9 @@ au BufNewFile,BufRead *.c
     \ set shiftwidth=4
 
 " YAML indentation
-au BufNewFile,BufRead *.yaml set tabstop=4 set softtabstop=4
+au BufNewFile,BufRead *.yaml
+    \ set tabstop=4 |
+    \ set softtabstop=4
 
 " Enable folding and using `space` key for it
 set foldmethod=indent
