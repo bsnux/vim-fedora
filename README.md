@@ -176,3 +176,4 @@ $ vim scp://username@host//path/to/file
 * `:%!python -m json.tool`: Format current JSON file
 * `:set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<`: Displaying invisible chars
 * `:set list!`: Hide invisible chars
+* `$ gvim --remote-tab README.md`: Open `README.md` file using a new tab on `gvim`
