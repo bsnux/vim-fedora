@@ -103,7 +103,9 @@ au BufNewFile,BufRead *.js
 au BufNewFile,BufRead *.json
     \ set tabstop=2 |
     \ set softtabstop=2 |
-    \ set shiftwidth=2
+    \ set shiftwidth=2 |
+    \ set expandtab |
+    \ set autoindent
 
 " C indentation
 au BufNewFile,BufRead *.c
