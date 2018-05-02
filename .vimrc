@@ -86,11 +86,11 @@ nmap <C-h> <C-w>h
 
 " Python indentation
 au BufNewFile,BufRead *.py
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
+    \ set tabstop=4 |		" tabs are 4 spaces
+    \ set softtabstop=4 |       " it will untab the line, not delete a single space char
+    \ set shiftwidth=4 |        " indenting is 4 spaces
+    \ set expandtab |		" don't use actual tab character
     \ set textwidth=79 |
-    \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
 
