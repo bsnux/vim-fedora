@@ -119,7 +119,7 @@ au BufNewFile,BufRead *.yaml
     \ set softtabstop=4
 
 " Groovy
-au BufNewFile,BufRead *.groovy, Jenkinsfile
+au BufNewFile,BufRead *.groovy,Jenkinsfile
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
@@ -127,7 +127,7 @@ au BufNewFile,BufRead *.groovy, Jenkinsfile
     \ set textwidth=79 |
     \ set autoindent
 
-au BufRead,BufNewFile Jenkinsfile setfiletype groovy
+au BufRead,BufNewFile Jenkinsfile set syntax=groovy
 
 " Enable folding and using `space` key for it
 set foldmethod=indent
