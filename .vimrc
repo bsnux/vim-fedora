@@ -119,13 +119,15 @@ au BufNewFile,BufRead *.yaml
     \ set softtabstop=4
 
 " Groovy
-au BufNewFile,BufRead *.groovy
+au BufNewFile,BufRead *.groovy, Jenkinsfile
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
     \ set expandtab |
     \ set textwidth=79 |
     \ set autoindent
+
+au BufRead,BufNewFile Jenkinsfile setfiletype groovy
 
 " Enable folding and using `space` key for it
 set foldmethod=indent
@@ -149,8 +151,6 @@ filetype plugin on
 
 " Using 4 spaces for displaying a tab in Go. Remember Go use tabs not spaces
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
-
-au BufRead,BufNewFile Jenkinsfile setfiletype groovy
 
 " Google yapf Python formattert
 function! YAPF() range
