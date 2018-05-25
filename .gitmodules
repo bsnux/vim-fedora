@@ -58,3 +58,6 @@
 [submodule ".vim/pack/plugins/start/vim-better-whitespace"]
 	path = .vim/pack/plugins/start/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule ".vim/pack/plugins/start/vim-puppet"]
+	path = .vim/pack/plugins/start/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
