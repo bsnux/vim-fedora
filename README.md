@@ -7,6 +7,11 @@ packages. I found that method pretty easy and save a lot of time. Keep in mind
 some plugins requires additional binaries, so Fedora and `dnf` are installing
 those binaries for us.
 
+Tested on the following Vim versions:
+
+* 8.1.55
+* 8.0
+
 ## Installation
 
 Clone this repo. to your favorite location:
