@@ -36,8 +36,9 @@ $ sudo dnf install \
     vim-golint \
     vim-jedi \
     vim-powerline \
-    vim-syntastic \
     vim-command-t \
+    vim-fugitive \
+    vim-syntastic \
     vim-syntastic-puppet \
     vim-syntastic-python
 ```
