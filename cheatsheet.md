@@ -13,6 +13,20 @@
 
 * `Ctrl-e`: Toggle files explorer
 
+## Autocomplete
+
+* Type and hit `Ctrl-n`. Then, `Ctrl-p` will move cursor up on the dialog box.
+* Type and hit `tab`: Python Jedi plugin.
+* `Ctrl-x Ctrl-o`: Go plugin.
+
+## Go plugin
+
+* `GoRun`: Execute code
+* `GoBuild`: Build from code
+* `GoLint`: Lint code
+* `GoVet`: Call to `go vet`
+* `GoTest`: Test code
+
 ## Navigation
 
 * `f<char>`: Move to next `<char>`. Example: `fa` moves to next `a`
@@ -61,10 +75,7 @@ Usefull commands:
 * `vim -t name`: Jump to `name` tag from command line
 * `:tn` Move to next definition
 * `:tp` Move to previous definition
-* `,g`: Jump to definition or declaration (*YouCompletMe* plugin)
-* `Ctrl-o`: Jump back from definition or declaration (*YouCompletMe* plugin)
-* `Ctrl-i`: Jump again to definition or declaration (*YouCompletMe* plugin)
-* `Ctrl-]`: Jump to definition
+ `Ctrl-]`: Jump to definition
 * `Ctrl-t`: Jump back from definition
 * `:Tagbar`: Open tag bar
 
@@ -114,15 +125,8 @@ $ vim scp://username@host//path/to/file
 ## Displaying indentation guides/lines
 
 ```
-:set listchars=tab:\|\ 
+:set listchars=tab:\|\
 :set list
-```
-
-## Setting indentation to 4 spaces
-
-```
-:set tabstop=4
-:set shiftwidth=4
 ```
 
 ## Misc
