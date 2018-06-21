@@ -1,6 +1,6 @@
 # Personal vim configuration
 
-*Vim 8.0* personal configuration optimized for Fedora 28.
+*Vim 8.x* personal configuration optimized for Fedora 28.
 
 Some plugins are installed as submodules and others just using Fedora binaries
 packages. I found that method pretty easy and save a lot of time. Keep in mind
