@@ -64,6 +64,13 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
+" Configuration for GUI version
+if has("gui_running")
+    set guifont=Hack\ 11
+    set guioptions-=m
+    set guioptions-=T
+endif
+
 " Functions
 function! ToggleVExplorer()
   " Toggle Vexplore with Ctrl-E
