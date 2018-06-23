@@ -55,6 +55,9 @@ let g:netrw_winsize = 25
 " Using 4 spaces for displaying a tab in Go. Remember Go use tabs not spaces
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
+" Jenkisfile is Groovy
+au BufRead,BufNewFile Jenkinsfile set syntax=groovy
+
 " Highlight extra whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
