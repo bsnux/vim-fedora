@@ -40,6 +40,7 @@ $ sudo dnf install \
     vim-fugitive \
     vim-syntastic \
     vim-syntastic-puppet \
+    vim-syntastic-yaml \
     vim-syntastic-python
 ```
 
