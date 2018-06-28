@@ -67,6 +67,10 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
+" Templates
+autocmd BufNewFile  *.pl      0r ~/.vim/templates/skeleton.pl
+autocmd BufNewFile  *.java    0r ~/.vim/templates/skeleton.java
+
 " Configuration for GUI version
 if has("gui_running")
     set guifont=Hack\ 11
