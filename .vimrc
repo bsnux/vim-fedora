@@ -5,6 +5,10 @@ let mapleader = ','
 set noswapfile
 set autoindent
 
+filetype on
+filetype plugin on
+filetype indent on
+
 " Next lines are for using spaces instead of tabs
 set expandtab
 set shiftwidth=4
