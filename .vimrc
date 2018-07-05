@@ -75,6 +75,9 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 autocmd BufNewFile  *.pl      0r ~/.vim/templates/skeleton.pl
 autocmd BufNewFile  *.java    0r ~/.vim/templates/skeleton.java
 
+" Fugitive
+nmap <leader>gs :Gstatus<cr>
+
 " Configuration for GUI version
 if has("gui_running")
     set guifont=Hack\ 11

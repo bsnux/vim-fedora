@@ -88,7 +88,7 @@ Usefull commands:
 
 ## Fugitive: Git
 
-* `,gst`: Open a new window executing **git status**
+* `,gs`: Open a new window executing **git status**
 * `-`: Add file
 * `C`: Commit added file/files
 
