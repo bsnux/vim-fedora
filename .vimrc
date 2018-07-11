@@ -83,9 +83,9 @@ if has("gui_running")
     set guifont=Hack\ 11
     set guioptions-=m
     set guioptions-=T
-    nmap <C-V> "+gP
-    imap <C-V> <ESC><C-V>i
     vmap <C-C> "+y
+    map  <silent>  <S-Insert>  "+p
+    imap <silent>  <S-Insert>  <Esc>"+pa
 endif
 
 " Functions
