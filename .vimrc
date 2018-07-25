@@ -21,6 +21,11 @@ map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR><Paste>
 set bg=dark
 colorscheme gruvbox
 
+" Changing cursor type in different modes. Works with: Terminator
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
+
 " Shortcuts
 ca tn tabnew
 
