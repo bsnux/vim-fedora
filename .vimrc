@@ -9,6 +9,14 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Set mouse
+set mouse=a
+
+" Copying to clipboard using `y`
+"    you'll need vim with clipboard support:
+"    alias vi=vimx
+set clipboard=unnamedplus
+
 " Next lines are for using spaces instead of tabs
 set expandtab
 set shiftwidth=4
@@ -82,6 +90,9 @@ autocmd BufNewFile  *.java    0r ~/.vim/templates/skeleton.java
 
 " Fugitive
 nmap <leader>gs :Gstatus<cr>
+
+" Terminal mode
+tnoremap <Esc> <C-W>N
 
 " Configuration for GUI version
 if has("gui_running")
